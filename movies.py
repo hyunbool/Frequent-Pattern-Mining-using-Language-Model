@@ -102,9 +102,11 @@ def load_data(data_type='train'):
     '''
     save_path = save_file[data_type]
 
+    word_to_id, id_to_word = load_vocab()
+    
     if os.path.exists(save_path):
         corpus = np.load(save_path)
-        return corpus
+        return corpus, word_to_id, id_to_word
 
     file_name = key_file[data_type]
     file_path = file_name
