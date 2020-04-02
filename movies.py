@@ -1,4 +1,12 @@
-# 밑바닥부터 배우는 딥러닝2(/dataset/ptb.py) 참조 https://github.com/WegraLee/deep-learning-from-scratch-2/blob/master/dataset/ptb.py
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
 import sys
 import os
 sys.path.append('..')
@@ -8,6 +16,9 @@ except ImportError:
     raise ImportError('Use Python3!')
 import pickle
 import numpy as np
+
+
+# In[2]:
 
 
 """
@@ -56,6 +67,7 @@ with open('splitted_movies_test.txt', 'w', encoding='utf-8') as file:
 """
 
 
+# In[5]:
 
 
 key_file = {
@@ -103,7 +115,7 @@ def load_data(data_type='train'):
     save_path = save_file[data_type]
 
     word_to_id, id_to_word = load_vocab()
-    
+        
     if os.path.exists(save_path):
         corpus = np.load(save_path)
         return corpus, word_to_id, id_to_word
@@ -113,8 +125,9 @@ def load_data(data_type='train'):
 
     words = open(file_path, 'r').read().replace('\n', '<eos> ').strip().split()
 
+    print(word_to_id)
             
-    corpus = np.array(words)
+    corpus = np.array([word_to_id[w] for w in words])
 
     np.save(save_path, corpus)
     return corpus, word_to_id, id_to_word
@@ -123,6 +136,9 @@ def load_data(data_type='train'):
 if __name__ == '__main__':
     for data_type in ('train', 'test'):
         load_data(data_type)
+
+
+# In[ ]:
 
 
 
