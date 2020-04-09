@@ -12,6 +12,10 @@ MovieLens(https://grouplens.org/datasets/movielens/)
 * crawling.py: 네이버 영화 사이트에서 영화 목록 크롤링
 * movies.py: movieLens 데이터 전처리
 
+### 데이터 전처리
+* 총 영화 갯수: 62423개
+* 두개 이상의 평가가 있는 영화 갯수: 59047개(전체 데이터의 94.6%)
+* 그중 frequent items(전체 itemset의 0.05% 차지): 8658개(전체 데이터의 14.6%)
 
 ## References
 * ITEM2VEC: Neural Item Embedding for Collaborative Filtering(https://arxiv.org/pdf/1603.04259.pdf)
