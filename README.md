@@ -16,12 +16,13 @@ MovieLens(https://grouplens.org/datasets/movielens/)
 ### 데이터 전처리
 * 총 영화 갯수: 62423개
 * 두개 이상의 평가가 있는 영화 갯수: 59047개(전체 데이터의 94.6%)
-* 그중 frequent items(전체 itemset의 0.05% 차지): 8658개(전체 데이터의 14.6%)
+* ~~그중 frequent items(전체 itemset의 0.05% 차지): 8658개(전체 데이터의 14.6%)~~
+* movielens의 small dataset 이용: 유저 데이터셋 1212개
 
 ## 평가
 * 환경: GeForce GTX 1080 Ti, CUDA Version_10.2    
 * rnnlm(using lstm):
-  * 전체 데이터(2개 이상의 평가): _속도가 너무 느려서 정지_
+  * 전체 데이터(2개 이상의 평가): ~~속도가 너무 느려서 정지~~
     * 에폭 2: 최종 training perlexity = 49.25, validation perplexity = 11748.59397679311
 
 ## References
