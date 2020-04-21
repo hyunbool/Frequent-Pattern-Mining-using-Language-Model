@@ -29,3 +29,4 @@ MovieLens(https://grouplens.org/datasets/movielens/)
 
 ## References
 * ITEM2VEC: Neural Item Embedding for Collaborative Filtering(https://arxiv.org/pdf/1603.04259.pdf)
+* Tensorflow, "Text generation with an RNN", https://www.tensorflow.org/tutorials/text/text_generation
