@@ -1,5 +1,5 @@
-# item_recommender_with_nlp
-NLP 기법을 이용한 아이템 추천 시스템 실험
+# frequent itemset mining using language model
+언어 모델을 이용한 빈발 집합 분석
 
 ## Dataset
 MovieLens(https://grouplens.org/datasets/movielens/)
