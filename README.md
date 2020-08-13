@@ -1,5 +1,5 @@
-# frequent itemset mining using language model
-언어 모델을 이용한 빈발 집합 분석
+# Frequent Pattern Mining using Language Model
+언어 모델을 이용한 빈발 패턴 마이닝
 
 ## Dataset
 MovieLens(https://grouplens.org/datasets/movielens/)
